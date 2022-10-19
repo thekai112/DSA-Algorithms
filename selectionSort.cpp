@@ -19,7 +19,7 @@ void printArr(int arr[], int n) {
 }
 
 // function for Selection Sort
-int *insertionSort(int arr[], int n) {
+int *selectionSort(int arr[], int n) {
   for(int i=0; i<n; i++) {
     for(int j=i+1; j<n-1; j++) {
       if(arr[i] > arr[j]) {
@@ -37,7 +37,7 @@ int main() {
   cout<<"Unsorted Array : ";
   printArr(unsortedArr, size);
 
-  int *sortedArr = insertionSort(unsortedArr, size);
+  int *sortedArr = selectionSort(unsortedArr, size);
   cout<<"Sorted Array : ";
   printArr(sortedArr, size);
 
